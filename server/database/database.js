@@ -11,7 +11,7 @@ function getNextId() {
 
 function associateStoryKeyToURLS(storyKey, urlList) {
     for(var i = 0; i < urlList.length; i++) {
-        urlToStoryKey[i] = storyKey;
+        urlToStoryKey[urlList[i]] = storyKey;
     }
 }
 
