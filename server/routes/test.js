@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.sendFile("/home/stoffel/WebstormProjects/Hackathon/server/views/index.html");
+    res.sendFile("/home/stoffel/WebstormProjects/Hackathon/server/views/test.html");
 });
 
 module.exports = router;

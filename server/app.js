@@ -7,8 +7,10 @@ var redis = require('redis');
 var axios = require('axios');
 
 var indexRouter = require('./routes/index');
+var testRouter = require('./routes/test');
 var ngoRouter = require('./routes/ngosub');
 var storyDataRouter = require('./routes/storydata');
+var urlStoryKeyLookupRouter = require('./routes/urlstorykeylookup');
 
 var app = express();
 
@@ -23,8 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/test', testRouter);
 app.use('/ngosub', ngoRouter);
 app.use('/storydata', storyDataRouter);
+app.use('/urlstorykeylookup', urlStoryKeyLookupRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
