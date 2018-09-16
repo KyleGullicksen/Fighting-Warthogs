@@ -29,3 +29,8 @@ module.exports.retrieveNGOSubmission =  function(storyKey) {
 
     //return an object representing all of the data in the submission
 }
+
+module.exports.getShowKeyFromURL = function(url) {
+    return urlToStoryKey[url];
+    //return an object representing all of the data in the submission
+}
