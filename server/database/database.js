@@ -1,4 +1,4 @@
-import {URLS_KEY} from "../constants/Constants";
+require('../constants/Constants');
 
 var ghettoDatabase = {}; //Key: StoryKey
 var urlToStoryKey = {}; //Key: URL
@@ -15,8 +15,7 @@ function associateStoryKeyToURLS(storyKey, urlList) {
     }
 }
 
-export function storeNGOSubmission(submission)
-{
+module.exports.storeNGOSubmission = function(submission) {
     var storyKey = getNextId();
 
     associateStoryKeyToURLS(storyKey, submission[URLS_KEY]); //For reverse lookup
@@ -25,7 +24,7 @@ export function storeNGOSubmission(submission)
     ghettoDatabase[storyKey] = submission;
 }
 
-export function retrieveNGOSubmission(storyKey) {
+module.exports.retrieveNGOSubmission =  function(storyKey) {
     return ghettoDatabase[storyKey];
 
     //return an object representing all of the data in the submission

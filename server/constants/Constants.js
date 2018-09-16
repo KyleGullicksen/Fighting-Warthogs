@@ -1,9 +1,9 @@
-export var TITLE_KEY = "TITLE_KEY";
-export var HOOK_KEY = "HOOK_KEY";
-export var TRAFFIC_STATS_KEY = "TRAFFIC_STATS_KEY";
-export var DEATH_STATS_KEY = "DEATH_STATS_KEYS";
-export var GLOBAL_SAVED_KEY = "GLOBAL_SAVED_KEY";
-export var CLOSING_KEY = "CLOSING_KEY";
-export var URLS_KEY = "URLS_KEY";
+module.exports.TITLE_KEY = "TITLE_KEY";
+module.exports.HOOK_KEY = "HOOK_KEY";
+module.exports.TRAFFIC_STATS_KEY = "TRAFFIC_STATS_KEY";
+module.exports.DEATH_STATS_KEY = "DEATH_STATS_KEYS";
+module.exports. GLOBAL_SAVED_KEY = "GLOBAL_SAVED_KEY";
+module.exports.CLOSING_KEY = "CLOSING_KEY";
+module.exports.URLS_KEY = "URLS_KEY";
 
 //Backgrounds?

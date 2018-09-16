@@ -1,4 +1,4 @@
-import {retrieveNGOSubmission, storeNGOSubmission} from "../database/database";
+require("../database/database");
 
 var express = require('express');
 var router = express.Router();

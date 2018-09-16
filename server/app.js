@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var redis = require('redis');
+var axios = require('axios');
 
 var indexRouter = require('./routes/index');
 var ngoRouter = require('./routes/ngosub');
