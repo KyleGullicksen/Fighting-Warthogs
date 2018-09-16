@@ -13,8 +13,7 @@ chrome.storage.sync.get('color', function (data) {
        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
            chrome.tabs.executeScript(
               tabs[0].id,
-   { code: 'document.body.style.backgroundColor = "' + color + '";' });
-           chrome.tabs.create({active: true, url: "http://github.com/"}); //replace github.com
+           chrome.tabs.create({active: true, url: "http://github.com/"})); //replace github.com
        });
        };
 });
