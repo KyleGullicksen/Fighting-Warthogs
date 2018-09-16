@@ -1,0 +1,25 @@
+{
+  "name": "Traffic Stop",
+  "description": "Creatue popup linking to new page with statistics of animal trafficing",
+  "permissions": [ "activeTab", "declarativeContent", "storage", "tabs", "<all_urls>" ],
+  "version": "0.0.1",
+  "background": {
+    "scripts": [ "background.js", "popup.js" ],
+    "persistent": false
+  },
+  "page_action": {
+   "default_popup": "popup.html",
+   "default_icon": {
+    "16": "images/Logo16x16.png",
+    "32": "images/Logo32x32.png",
+    "128": "images/Logo128x128.png"
+  }
+  },
+"icons": {
+  "16": "images/Logo16x16.png",
+  "32": "images/Logo32x32.png",
+ "128": "images/Logo128x128.png"
+},
+ 
+  "manifest_version": 2
+}
