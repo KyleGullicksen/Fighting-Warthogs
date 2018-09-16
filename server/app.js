@@ -7,7 +7,6 @@ var redis = require('redis');
 var axios = require('axios');
 
 var indexRouter = require('./routes/index');
-var testRouter = require('./routes/test');
 var ngoRouter = require('./routes/ngosub');
 var storyDataRouter = require('./routes/storydata');
 var urlStoryKeyLookupRouter = require('./routes/urlstorykeylookup');
@@ -22,10 +21,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/test', testRouter);
 app.use('/ngosub', ngoRouter);
 app.use('/storydata', storyDataRouter);
 app.use('/urlstorykeylookup', urlStoryKeyLookupRouter);
