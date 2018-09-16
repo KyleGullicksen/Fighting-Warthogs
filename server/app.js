@@ -6,7 +6,7 @@ var logger = require('morgan');
 var redis = require('redis');
 var axios = require('axios');
 
-var indexRouter = require('./routes/index');
+//var indexRouter = require('./routes/index');
 var ngoRouter = require('./routes/ngosub');
 var storyDataRouter = require('./routes/storydata');
 var urlStoryKeyLookupRouter = require('./routes/urlstorykeylookup');
@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
+//app.use('/', indexRouter);
 app.use('/ngosub', ngoRouter);
 app.use('/storydata', storyDataRouter);
 app.use('/urlstorykeylookup', urlStoryKeyLookupRouter);
