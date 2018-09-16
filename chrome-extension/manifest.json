@@ -1,0 +1,27 @@
+{
+  "name": "Traffic Stop",
+  "version": "1.0.0",
+  "description": "This extension will notify you in case you are about to make a bad purchase!",
+  "options_page": "options.html",
+  "permissions": [ "activeTab", "declarativeContent", "storage" ],
+  "background": {
+    "scripts": [ "watchdog.js" ],
+    "persistent":true 
+  },
+  "page_action": {
+    "default_popup": "traffic_stop.html",
+    "default_icon": {
+      "16": "images/go16.png",
+      "32": "images/go32.png",
+      "48": "images/go48.png",
+      "128": "images/go128.png"
+    }
+  },
+  "icons": {
+    "16": "images/go16.png",
+    "32": "images/go32.png",
+    "48": "images/go48.png",
+    "128": "images/go128.png"
+  },
+  "manifest_version": 2
+}
