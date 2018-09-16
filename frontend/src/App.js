@@ -39,7 +39,7 @@ class App extends Component {
       <DividerHeader>
         <p>Additional Actions</p>
       </DividerHeader>
-      <p><a href="/info" target="_blank">Add Information</a></p>
+      <p><a rel="noopener noreferrer" target="_blank" href="http://localhost:3001/info">Add Information</a></p>
       <p><a href="/report" target="_blank">Report this page</a></p>
       <p><a href="/feedback" target="_blank">Submit Feedback</a></p>
     </Box>
